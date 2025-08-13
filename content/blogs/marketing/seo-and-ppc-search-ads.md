@@ -1,5 +1,6 @@
 ---
 title: "SEO and PPC search ads"
+meta_title: "SEO and PPC Search Ads Best Practices | Respiro"
 description: "Best practices for SEO and SEM. Keyword research, naming conventions, redirects and more."
 ---
 

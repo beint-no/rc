@@ -1,6 +1,31 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'Respiro'
+# Basic Configuration
+baseURL = "https://respiro.com/"
+languageCode = "nb-NO"
+title = "Respiro"
+
+# Core SEO switches
+enableRobotsTXT = true
+
+# Required Module Configuration
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.148.2"
+
+# Use Git/file times for <lastmod> in pages and sitemap
+enableGitInfo = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # Allow raw HTML, important for JSON-LD etc.
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
+
+[minify]
+  minifyOutput = true
 
 [menus]
   [[menus.main]]
