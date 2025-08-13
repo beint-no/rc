@@ -1,9 +1,5 @@
 ---
 title: "Marketing"
 meta_title: "Marketing & SEO | Respiro"
-description: "Marketing & SEO – Respiro"
+description: "Learn more about marketing and SEO, we cover SEM, SEO, keywords, google search console and more"
 ---
-
-Marketing
-
-[SEO and PPC search ads](/blogs/marketing/seo-and-ppc-search-ads/)
