@@ -17,9 +17,11 @@
                     {{ .Title }}
                 </h1>
                 
+                {{ with .Description }}
                 <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                    {{ .Description }}
+                    {{ . }}
                 </p>
+                {{ end }}
             </div>
         </div>
     </section>

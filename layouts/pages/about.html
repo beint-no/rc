@@ -1,27 +1,43 @@
 {{ define "main" }}
+  <!-- Hero / Intro band with gradient like Contact page -->
   <section class="relative overflow-hidden">
     <div class="mx-auto max-w-7xl px-4 py-12 md:py-16">
+      <!-- Breadcrumbs -->
       <nav class="text-sm text-gray-500 mb-3" aria-label="Breadcrumb">
         <ol class="flex items-center gap-2">
-          <li><a href="/" class="hover:text-gray-700">Home</a></li>
+          <li><a href="/" class="hover:text-gray-700">Hjem</a></li>
           <li class="text-gray-300">/</li>
-          <li class="text-gray-700 font-medium">About us</li>
+          <li class="text-gray-700 font-medium">{{ .Title }}</li>
         </ol>
       </nav>
       <div class="text-center md:text-left">
-        {{ with .Params.description }}
-          <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight text-gray-900">{{ . }}</h1>
-        {{ else }}
-          <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight text-gray-900">{{ .Title }}</h1>
+        <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight text-gray-900">{{ .Title }}</h1>
+        {{ with .Description }}
+          <p class="mt-4 text-lg text-gray-600">{{ . }}</p>
         {{ end }}
       </div>
     </div>
   </section>
 
+  <!-- Main content -->
   <section class="relative overflow-hidden mx-auto max-w-7xl px-4 pb-16 md:pb-20">
     <div class="mt-8 md:mt-12">
-      <article class="bg-white rounded-2xl shadow-2xl ring-1 ring-indigo-100/70 p-6 md:p-8 lg:p-10 prose prose-slate max-w-3xl">
-        {{ .Content }}
+      <article class="bg-white rounded-2xl shadow-2xl ring-1 ring-indigo-100/70 p-6 md:p-8 lg:p-10">
+        <div class="prose prose-slate max-w-3xl">
+          <h2>Vår historie</h2>
+          <p>Respiro ble grunnlagt med et klart mål: å utvikle brukervennlige apper som hjelper folk i deres hverdag. Vi tror på enkelhet, funksjonalitet og god brukeropplevelse.</p>
+          
+          <h2>Vårt team</h2>
+          <p>Vårt dedikerte team består av erfarne utviklere, designere og produktledere som brenner for å skape gode digitale opplevelser.</p>
+          
+          <h2>Verdier</h2>
+          <ul>
+            <li><strong>Enkelhet:</strong> Vi forenkler komplekse utfordringer</li>
+            <li><strong>Kvalitet:</strong> Vi leverer pålitelige og velutviklede løsninger</li>
+            <li><strong>Innovasjon:</strong> Vi utforsker nye måter å løse problemer på</li>
+            <li><strong>Brukerfokus:</strong> Brukerne våre står i sentrum for alt vi gjør</li>
+          </ul>
+        </div>
       </article>
     </div>
   </section>
