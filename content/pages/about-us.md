@@ -1,6 +1,7 @@
 ---
 title: "About us"
-description: "About Respiro | AI software company"
+meta_title: "About Respiro | AI software company"
+description: "Respiro AS is a softwarwe development company focusing on building AI first Saas solutions."
 layout: about
 ---
 
