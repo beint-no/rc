@@ -2,11 +2,10 @@
 title: "SEO and PPC search ads"
 meta_title: "SEO and PPC Search Ads Best Practices | Respiro"
 description: "Best practices for SEO and SEM. Keyword research, naming conventions, redirects and more."
+layout: blog-article
 ---
 
 Search engine optimization and related PPC ads are one of the most important part of marketing at [Famme](https://famme.no).
-
-Search engine optimization and related PPC ads are one of the most important part of marketing at Famme.
 
 In this onboarding document we will go through the following for SEO:
 
@@ -398,150 +397,333 @@ The naming convention is LANG.json, so da.json contains the translations for Dan
 
 Most theme text is stored in the locales folder in .json files. But you will not find product descriptions email templates and many other texts in the locales folder. Shopify stores translations of resources like:
 
-Product
-Collection
-Navigation
+- Product
+- Collection
+- Navigation
+
 The full list of resources.
 
  
 
 There is no native GUI as of this writing for translations. But several apps have a user interface for storing and retrieving translations from Shopify, we use the app “translate my store”.
 
-Translation app functionality
-Manual translation
+### Translation app functionality
+## Manual translation
 You can manually translate each resource type, for example collection titles.
 
-Automated translation
+## Automated translation
 Be careful with automated translation, it should only be used for certain resouce types. For example “Vortex leggings” should not be translated to “virvel tights”, but “Vortex tights” should be fine.
 
 Translation results are OK for product and collection descriptions , but probably quite a few bad translations. Should be easy to spot for Danish and Swedish if it sounds stupid
 
 Resource types to auto-translate:
 
-Navigation. Often works with a few mistakes
-Product descriptions
-Collection title and descriptions. NOT meta descriptions and meta titles, so do not translate everything under the collection resource type. “advanced filter” must be used in the app.
-Online store theme
-Article, Blog and page can be risky. Important pages like return and exchanges should probably be verified with a native speaker.
-Video SEO - Shopify or YouTube hosted videos
+- Navigation. Often works with a few mistakes
+- Product descriptions
+- Collection title and descriptions. NOT meta descriptions and meta titles, so do not translate everything under the collection resource type. “advanced filter” must be used in the app.
+- Online store theme
+- Article, Blog and page can be risky. Important pages like return and exchanges should probably be verified with a native speaker.
+
+## Video SEO - Shopify or YouTube hosted videos
+
 There are two ways to upload videos to Shopify:
 
-Hosted on Shopify
-When uploading to Shopify there is a limit of 60 seconds, so either speed up the video,while preserving or removing pitch, or clip unnecessary parts out.
+1. **Hosted on Shopify**
 
- 
+   When uploading to Shopify there is a limit of 60 seconds, so either speed up the video, while preserving or removing pitch, or clip unnecessary parts out.
 
-Hosted on YouTube. This is what we should always use in Famme since Google ranks YT hosted videos higher
-Hosting on YouTube should be fine. In the YouTube description include a link to the product. The video can be unlisted, so it does not show up in search results if we want to hide it.
+2. **Hosted on YouTube**
 
- 
+   This is what we should always use in Famme since Google ranks YT hosted videos higher. Hosting on YouTube should be fine. In the YouTube description include a link to the product. The video can be unlisted, so it does not show up in search results if we want to hide it.
 
-Deduplication and consolidation of content
-We do not only want to have relevant content. We want to not have irrelevant content. Obviously it is harder to find something relevant when there is a lot of “noise” on the site.
+   - **Pros of YouTube hosting:**
+     - Better ranking in Google search
+     - No storage limits
+     - Better video quality options
+     - Analytics available
+   
+   - **Cons of Shopify hosting:**
+     - 60-second limit
+     - Uses store bandwidth
+     - Limited quality options
+     - No built-in analytics
 
-If we are trying to rank for sportswear, but write about soap operas. Google might wonder, just like a person visiting our page, what is this page about?
+## Deduplication and Consolidation of Content
 
-We need to make it easy for Google to understand what the page is about and avoid confusion.
+We don't just want relevant content—we want to eliminate irrelevant content. It's harder to find what you're looking for when there's too much "noise" on a site.
 
-Remove irrelevant content
-Blog posts about SEO just summarizes what Google says in their documentation in most cases. The best and most accurate information is thus SEO documentation directly from Google.
+For example, if we're trying to rank for sportswear but write about soap operas, both Google and visitors will be confused about our page's purpose.
 
-To avoid irrelevant content from “polluting” the SERP (search engine result pages), there are several things to do. Crawlers, like Google’s web crawler, works in such a way that they can selectively choose to index pages or not. That can be because you “tell Google” not to crawl a page or that Google for some reason decides the page should not be indexed because it is not “that important”.
+Our goal is to make it crystal clear to search engines what each page is about.
+
+#### Controlling Crawl Budget
+
+Search engines allocate a limited "crawl budget" to each site. This means they'll only crawl a certain number of pages on your site during each visit. To make the most of this:
+
+* **Exclude non-essential pages** from indexing
+* **Consolidate similar content** to reduce redundancy
+* **Remove or update outdated content** that no longer serves a purpose
+
+#### Avoid Duplicate Content
 
 What can we do to decrease irrelevance:
 
-Avoid duplicate content
-Use robots.txt to avoid crawling of duplicate or unimportant resources. See Famme’s robots.txt at famme.no/robots.txt
+* Avoid duplicate content
+* Use robots.txt to avoid crawling of duplicate or unimportant resources. See Famme’s robots.txt at famme.no/robots.txt
+* No-index non-important pages that do not need to be available on SERP
+* Consolidate articles
+* Remove unnecessary information
 No-index non-important pages that do not need to be available on SERP
 Consolidate articles
 Remove unnecessary information
-Practical examples
-Avoiding duplicate content
-For product description, do not copy one product description to another product. Try to vary the text even if the leggings have a lot of the same properties
-No collection texts should be equal, if they are equal or similar, could it be 1 collection?
-For blog posts, do not write about the same thing in two separate articles unless you have a very good reason to. It is better to link to the article with the duplicate information
-Robots.txt
-All Shopify stores has a robots.txt file, for instance famme.no/sitemap.xml, that blocks crawlers from indexing cart pages and search results. Indexing and showing on the SERP a search for “test” on famme.no is not valuable to anyone, since searches vary wildly, it makes sense to not index searches.
 
-Removing non-ranking and consolidating articles
+### Practical Examples
+
+#### 1. Product Descriptions
+   - Never copy descriptions between similar products
+   - Highlight unique features and benefits
+   - Use different angles or selling points for similar items
+
+#### 2. Collection Pages
+   - Each collection should have unique, descriptive text
+   - If collections are too similar, consider merging them
+   - Focus on different aspects for similar collections
+
+#### 3. Blog Content
+   - Avoid covering the same topic multiple times
+   - Instead of duplicating, link to your existing content
+   - Update and expand existing posts rather than creating similar new ones
+
+### Understanding robots.txt
+
+Your `robots.txt` file controls search engine crawling behavior:
+
+```
+# Example robots.txt
+User-agent: *
+Disallow: /cart
+Disallow: /search
+Disallow: /account
+```
+
+Key points:
+- Blocks search engines from indexing non-essential pages
+- Prevents wasting crawl budget on unimportant URLs
+- Example: `famme.no/robots.txt`
+
+### Content Consolidation Strategy
+
+#### When to Consolidate
+- Multiple pages targeting the same keywords
+- Similar content spread across multiple URLs
+- Low-performing pages with overlapping topics
+
+#### Action Plan
+1. **Audit** your content for duplication
+2. **Merge** similar pages where appropriate
+3. **Redirect** consolidated pages properly
+4. **Update** internal links to point to the consolidated content
+
+### Product and Collection Pages
+
+#### Product Pages
+- Each product should have unique descriptions
+- Highlight different features for similar products
+- Consider consolidating color/size variants under one URL
+
+#### Collection Pages
+- Ensure each collection has a distinct theme
+- Avoid overlapping product groupings
+- Use unique, descriptive text for each collection
+
+### Removing Non-Ranking and Consolidating Articles
+
 This requires some thought and research.
 
 What pages are too similar?
 Are some pages answering the same search intent? If yes, can they be merged or rewritten?
 When is it time to remove a page?
-Product pages and collection pages
-Product pages cannot seldom be merged or removed without good reason. Famme has consolidated all colors of a product into one url, many stores have all colors as separate products, which can lead to duplicate content issues and cannibalization of rankings.
+## Using Search Console for Content Analysis
 
-When a product is discontinued it is important to setup a redirect to a similar product, or just hide the product from collection pages but still keep the product on the page. This is especially important for products ranking and getting organic traffic. A user landing on 404 can mean lost sales.
+### Identifying Underperforming Pages
 
-For collection pages, redirecting is also important if you delete the collection or rename the collection handle.
+To maintain a healthy website, identify and address pages that aren't performing well. Analyze different page types in Google Search Console (3-6 month period recommended):
 
-Using search console to find consolidation / deleting ideas
-So ultimately, we want traffic. If a page is not getting traffic, we should consider deleting it. Let’s try to go page type by page type to see if we find poor performing pages.
+```
+page contains 'products'
+page contains 'collection'
+page contains 'blog'
+page contains 'page'
+```
 
-Search for the following in search console in a period of 3-6 months:
+Exclude branded searches: `does not contain famme|femme|fanme`
 
-page contains ‘products’. All product pages contains ‘product’ in the URL
-page contains ‘collection’
-page contains ‘blog’
-page contains ‘page’
-That covers all major page types on the Shopify platform interesting for SEO. Also, to avoid branded searching ‘polluting’ the analysis, do a query does not contain famme|femme|fanme negative regex search.
+Our top-performing article for non-branded searches is currently about maternity leggings.
 
-Let’s start with analyzing the blogs.
+#### For blogs with low impressions (after 1+ month):
 
-For Famme, as of this writing, our best performing articles that is getting traffic for non-branded searches is an article about maternity leggings.
+1. **Delete** - If content is irrelevant or outdated
+2. **Merge** - With related, stronger content
+3. **Improve** - Update with better information and keywords
 
-If a blog posts have been up for more than a month and not getting impressions, one has to consider:
+[Performance Report for Blogs](https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain%3Afamme.no&page=*blog&breakdown=page&num_of_months=3)
 
-Deleting it, it is not relevant
-Merging it with an existing article
-Improving it
-If you go to this link: https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain%3Afamme.no&page=*blog&breakdown=page&num_of_months=3
+> **Note:** Always evaluate if the content answers a user's question before making changes. New articles may need time to gain traction.
 
-And sort by impressions, you will see candidates for deletion. Ask yourself, are you answering anyone’s questions with this article?
+### Handling URL Changes
 
-If the article is newly written, give it some time, else delete, consolidate or improve the article.
+> **Important:** Check for URL changes that might affect performance metrics. A blog article's performance might appear worse than it actually is if you're looking at an old URL structure.
 
-Sometimes the URLs has changed, so a blog article might perform better than what it looks like if you look at an old url structure for the blog post.
+### Product & Collection Page Optimization
 
-The same process can be done with collection pages and product pages, but instead of merging and deleting, it is more likely to try to improve the product description and internal linking to the product.
+For product and collection pages, focus on improvement rather than deletion:
 
-Are we missing high volume keywords from the descriptions? Do we link to the products from relevant blog articles? etc.
+- **Enhance product descriptions** with relevant keywords
+- **Improve internal linking** from blog articles
+- **Check for missing high-volume keywords** in descriptions
+- **Ensure products are linked** from relevant blog content
 
-See what Google has not indexed - What Google thinks is not relevant
-Go to the coverage report in GSC and choose “excluded”, here you can find “Crawled - not currently indexed” URLs.
+### Identifying Non-Indexed Pages
 
-In many cases you can find new articles / pages that Google has not yet indexed. If a page stays here for a long time Google might evaluate that page as non-relevant / not important.
+1. Go to Google Search Console
+2. Navigate to Coverage Report
+3. Select "Excluded"
+4. Look for "Crawled - not currently indexed" URLs
 
-Click through rates
-Content that is already ranking at the first page, might get few clicks if the click through rate is bad. Click through rate is proportional to position in the SERP. To increase the click through rate, we can do two things:
+These pages might need attention if they remain unindexed for an extended period.
 
-Improve the page to rank higher, Google already thinks these articles are somehwat useful / relevant, so ranking 1st place is not impossible
-Improve the meta description and title to improve CTR
-To improve the CTR based on title and desceription changes, we need to understand the psychology behind what makes people click. If people look to compare products, then “best i test” and similar might trigger people. For transactional searches “Free shipping” and similar USPs might be useful to write. Google “Zalando” and look at the description texts, they are “keywordstuffed” with “gratis frakt & retur” and similar.
+## Improving Click-Through Rates (CTR)
 
-How much is traffic worth?
-When paying for something, you get value back. Often the value is intangible, sometimes it is tangible. In marketing we often want to spend money to get money back. And we want more money than we spent.
+### Why CTR Matters
+Pages on the first page can still underperform if they don't attract enough clicks. CTR is directly tied to your search result position.
 
-It can often be hard to calculate ROI, return on investment, as there are a lot of costs that marketers might not be aware of. Product cost, shipping cost, customer service cost etc. There are too many variables to take everything into account, so one should focus on the most important factors.
+### Key Areas for Improvement
 
-How to get the value of a visitor
-Assumptions:
+1. **Boost Search Rankings**
+   - Aim for top 3 positions
+   - Existing rankings show Google sees value
+   - Higher positions = More visibility = More clicks
 
-Average order value including shipping is 600 NOK
-Site conversion rate: 3.5%.
-Average cost is 200, including shipping of products, product cost etc. COGS = cost of goods.
-VAT is 25%, so to remove it, multiple by 0.8 from incl VAT prices
-If every visitor had the same 3.5% chance of converting, each visitor is worth:
+2. **Enhance Snippet Appearance**
+   - **Titles**: Clear, benefit-focused, include keywords
+   - **Descriptions**: Compelling value proposition with CTAs
 
-(price * exclude_vat_factor - COGS) * conversion_rate
-(600*0.8 - 200) * 0.035 = 9.8 
-That means we can pay 9.8 kr to get a visitor on our website, and we will be break even. If you can double your conversion rate, or your margins, you can pay 2X for each visitor.
+### CTR Optimization Tactics
 
-How does this relate to AD spend
+**For Comparison Queries**:
+- Include comparison terms ("vs", "compared to")
+- Highlight competitive advantages
+- Use terms like "best for [use case]"
+
+**For Purchase Queries**:
+- Showcase key benefits (free shipping, easy returns)
+- Include trust indicators (ratings, inventory status)
+- Add urgency when relevant (limited stock, sale ending)
+
+## Understanding Traffic Value
+
+### The Economics of Website Traffic
+
+In digital marketing, understanding the monetary value of each visitor is crucial for making informed decisions about advertising spend and content strategy.
+
+### Key Factors in Calculating Visitor Value
+
+1. **Average Order Value (AOV)**: 600 NOK (including shipping)
+2. **Conversion Rate**: 3.5%
+3. **Cost of Goods Sold (COGS)**: 200 NOK (including shipping and product costs)
+4. **VAT Rate**: 25% (excluded by multiplying by 0.8)
+
+### Calculating Visitor Value
+
+```
+Visitor Value = (AOV × VAT_Adjustment - COGS) × Conversion_Rate
+             = (600 × 0.8 - 200) × 0.035
+             = (480 - 200) × 0.035
+             = 280 × 0.035
+             = 9.8 NOK
+```
+
+### Key Takeaways
+
+- **Break-even CPA**: 9.8 NOK per visitor
+- **Scaling Potential**: 
+  - Double conversion rate → Double your CPA target
+  - Increase profit margins → Increase CPA target proportionally
+  - Combine both for exponential growth
+
+### Practical Implications
+
+1. **Budget Allocation**: Use this calculation to determine your maximum cost per acquisition (CPA) for paid campaigns.
+2. **ROI Focus**: Concentrate on the most significant cost factors that impact your bottom line.
+3. **Testing Ground**: Experiment with different conversion rates to model various business scenarios.
+
+> **Pro Tip:** Regularly update these calculations as your costs, conversion rates, or average order values change.
+
+## Google Ads Strategy
+
+### Understanding Ad Spend Economics
+
+Google Ads operates on a pay-per-click (PPC) model, making it essential to understand the value of each visitor to your site.
+
+### Google Ads Overview
+
+#### 1. Search Ads
+- Appear above organic search results
+- Text-based advertisements
+- Triggered by specific search queries
+
+#### 2. Shopping Ads
+- Appear above search ads for product-related queries
+- Include product image, price, and store name
+- Require a product feed
+
+### Determining Maximum CPC
+
+To calculate your maximum cost-per-click (CPC), consider these key factors:
+
+1. **Conversion Rate**
+   - Overall average: ~4%
+   - Varies by search intent and keyword specificity
+   - Example: "scrunch leggings" has higher intent than "men's leggings"
+
+2. **Customer Value**
+   - Initial purchase value
+   - Potential for repeat purchases
+   - Lifetime customer value
+
+3. **Campaign Goals**
+   - Brand awareness vs. direct response
+   - New customer acquisition vs. remarketing
+
+### Estimating Conversion Rates by Search Type
+
+| Search Type | Example | Conversion Likelihood | Reasoning |
+|-------------|---------|----------------------|-----------|
+| Branded | "Famme leggings" | Highest | High intent, knows the brand |
+| Specific Product | "Scrunch leggings" | High | Clear purchase intent |
+| Generic | "Men's leggings" | Lower | Less specific, more browsing |
+| Competitor | "Gymshark tights" | Medium | Open to alternatives |
+
+### Practical Application
+
+1. **Bid Strategy**
+   - Allocate higher bids to high-intent keywords
+   - Adjust bids based on device, location, and time of day
+
+2. **Quality Score**
+   - Improve ad relevance and landing page experience
+   - Higher Quality Score = Lower CPC
+
+3. **Negative Keywords**
+   - Filter out irrelevant searches
+   - Save budget for more qualified traffic
+
+> **Pro Tip:** Regularly review search term reports to identify new keyword opportunities and negative keywords to add.
+
+### How does this relate to AD spend
 On Google search and shopping ads, you pay per click, i.e per visitor. Knowing how much you can pay for each click / visitor, is crucial to not wasting money.
 
-Google ads - key takeaways
+### Google ads - key takeaways
 Google shopping and search ads
 Search ads dispalys above organic search results in the search tab in Google
 Google shopping ads shows above search ads when people do product searches
@@ -562,47 +744,118 @@ Seamless leggings Vs. Leggings -> Seamless leggings is something we have A LOT o
 could be relevant or irrelevant, therefore we should be willing to pay more for the seamless search
 In general: More specific searches that are “guaranteed” to be relevant, we should pay more for.
 
-How to find bad performing search keywords
-Look at conv value / cost. If it is low, and there are many clicks, you must ask if there is a mismatch between the search and the product you try to sell, or if the landing page is simply bad.
+## Brandjacking Strategy
 
+### Understanding Brandjacking
 
-Brandjacking
-As a brand, we cannot “naturally” rank for branded search terms other than search queries containing “Famme”. We do not sell Nike, Adidas or Gymshark, therefore we cannot rank for “gymshark tights” on a product or collection page.
+Brandjacking involves targeting searches for competitor brands to attract potential customers who might be interested in your products. While we can't rank organically for these terms, we can create valuable content that appears when users search for these brands.
 
-But, a search like “Gymshark tights” is actually very relevant. The person is probably looking for a leggings that is quite similar to what we have, and they can get it much cheaper and with better shipping and service than at Gymshark. Therefore trying to get the traffic for branded search terms is relevant.
+### Why Target Competitor Brands?
 
-Read this article about brand jacking for some real world examples.
+- **High Purchase Intent**: Users searching for specific brands are often ready to buy
+- **Lower Competition**: Fewer businesses target these specific terms
+- **Cost-Effective**: Can be more affordable than generic terms
+- **Relevant Audience**: These users are already interested in similar products
 
-NB! Important to not mix brand jacking articles together with other articles we have. It can be put under a separate blog “merker” / “brands” instead of under a product category blog or similar.
+### Implementation Guidelines
 
-To see results of brand jacking at Famme, go to search console and filter on queries containing “gymshark”.
+1. **Content Organization**
+   - Create a dedicated "Brands" or "Merker" blog category
+   - Keep brandjacking content separate from other articles
+   - Ensure clear navigation and internal linking
 
-Examples for Famme competitors
-Replace “brand” with Gymshark, Adidas, Icaniwill and other similar brands.
+2. **Tracking and Analysis**
+   - Monitor performance in Google Search Console
+   - Track queries containing competitor brands (e.g., "gymshark")
+   - Analyze click-through rates and conversion metrics
 
-brand rabattkode / brand discount
-brand review
-brand tights
-brand , for instance gymshark flex leggings, fitjeans 360 etc.
-brand Norge / brand in general for countries we are targeting
-brand retur
-brand kundeservice
-brand outlet
-Om brand / about brand
-All those above could be H2 section headers
+### Content Structure for Brand Pages
 
-For instance:
+For each target brand (e.g., Gymshark, Adidas, Icaniwill), create comprehensive content covering:
 
-h2 Gymshark flex leggings
+#### 1. Brand Overview
+   - Brief history and market position
+   - Product range and specialties
+   - Price positioning
 
-Gymshark flex leggings is a seamless tights....
-Then include a link to the seamless tights famme collection.
+#### 2. Product Comparisons
+   - Compare specific products with your alternatives
+   - Highlight advantages (price, features, shipping, etc.)
+   - Include high-quality images and specifications
 
-Writing a brand jacking article and using ads to drive traffic
-If you want to drive organic traffic to your website, then why not* drive paid traffic as well? Assuming the traffic is relevant it has a conversion rate higher than 0, and thus the bid should be higher than 0. The higher conversion rate you think a page has, the more you can bid in general. People searching for other brands are less likely to convert than people searching for your brand. It can be hard to know if a brand search is less likely to convert than a generic term, that will probably depend upon brand. The closer our brand is to another brand, it makes sense to assume that the conversion rate is higher. Also, since brands may carry different product types, the “brand X” searches may differ in conversion rate.
+#### 3. Customer Experience
+   - Return policies comparison
+   - Customer service evaluation
+   - Shipping times and costs
 
-Some examples:
+#### 4. Alternative Recommendations
+   - Suggest similar products from your catalog
+   - Focus on unique selling points
+   - Include clear call-to-action buttons
 
-Arcteryx searches are less likely to convert than Gymshark searches.
-Arcteryx turtights is less likely to convert than Arcteryx treningstights since we do not have turtights at the moment. At least not what is showing up in search when googling turtights.
-Icaniwill searches is more likely to convert than generic Nike searches. We have a higher overlap in customer with Icaniwill
+### Paid Advertising Strategy
+
+1. **Campaign Structure**
+   - Create separate campaigns for each major competitor
+   - Group related keywords into tightly themed ad groups
+   - Use competitor brand names in your ad copy
+
+2. **Bidding Strategy**
+   - Set bids based on estimated conversion rates
+   - Adjust for brand proximity (closer competitors = higher bids)
+   - Monitor and optimize for ROI
+
+3. **Landing Page Optimization**
+   - Create dedicated landing pages for each brand
+   - Address common pain points with competitor products
+   - Showcase your competitive advantages
+
+### Performance Monitoring
+
+1. **Key Metrics to Track**
+   - Click-through rate (CTR)
+   - Conversion rate
+   - Cost per acquisition (CPA)
+   - Return on ad spend (ROAS)
+
+2. **Regular Optimization**
+   - Update content based on performance
+   - Refresh product comparisons regularly
+   - Add new competitor products as they're released
+
+> **Important:** Always maintain ethical standards when creating brandjacking content. Focus on factual comparisons and avoid making false claims about competitors.
+
+### Example: Gymshark Flex Leggings Page
+
+```markdown
+## Gymshark Flex Leggings Review & Alternatives
+
+### Overview
+Gymshark Flex Leggings are popular for their seamless design and compression fit. However, if you're looking for similar quality at a better price point, consider our [Seamless Collection](#).
+
+### Key Features Comparison
+| Feature | Gymshark Flex | Our Alternative |
+|---------|---------------|-----------------|
+| Price | 499 NOK | 399 NOK |
+| Material | 80% Nylon, 20% Elastane | 85% Nylon, 15% Elastane |
+| Seams | Seamless | Seamless |
+| Waistband | Medium-rise | High-rise with wide band |
+| Pockets | No | Side pockets |
+| Shipping | 3-5 business days | Free shipping over 499 NOK |
+
+[Shop Now](#) - Save 100 NOK today!
+```
+
+### Conversion Rate Considerations
+
+- **Higher Conversion Potential**:
+  - Searches for similar brands (e.g., Gymshark, Icaniwill)
+  - Specific product searches (e.g., "scrunch leggings")
+  - Price-conscious queries (e.g., "affordable gym leggings")
+
+- **Lower Conversion Potential**:
+  - Premium/luxury brand searches (e.g., "Lululemon Align")
+  - Brand-loyal searches (e.g., "Nike Pro")
+  - Unrelated product categories
+
+By implementing these strategies, you can effectively capture valuable traffic from competitor brand searches while providing genuine value to potential customers.
