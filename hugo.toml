@@ -34,7 +34,7 @@ orgform = "Private company"
 text = "Respiro is an AI-first software company building products that help teams work smarter and move faster."
 
 [params.contact]
-email = "hello@respiroc.com"
+email = "gt@respiroc.com"
 orgnr = ""
 address = "Oslo, Norway"
 phone = "+47 00000000"
@@ -99,4 +99,4 @@ a = "We are based in Oslo, Norway with distributed team members."
 
 [[params.faq]]
 q = "How can we contact you?"
-a = "Email hello@respiroc.com or use the contact page."
+a = "Email gt@respiroc.com or use the contact page."

@@ -35,6 +35,6 @@ We are headquartered in Oslo, Norway with a distributed team across Europe. We�
 Let’s build together
 If you’re exploring AI copilots, intelligent automation, or modernizing your data stack, we’d love to talk.
 
-- Email: hello@respiroc.com
+- Email: gt@respiroc.com
 - Contact: /pages/contact/
     
