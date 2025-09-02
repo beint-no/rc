@@ -1,0 +1,150 @@
+{{ define "main" }}
+<div class="bg-gradient-to-br from-blue-50 via-white to-purple-50">
+
+    <section class="relative pt-20 pb-1 overflow-hidden">
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-4">
+                    {{ .Title }}
+                </h1>
+
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    {{ .Summary }}
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-8 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="mb-12">
+                <div class="grid md:grid-cols-2 gap-12">
+
+                    <div class="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-8 shadow-sm">
+                        <div class="mb-6">
+                            <div class="inline-flex items-center px-3 py-1 bg-blue-100 rounded-full text-blue-800 text-sm font-medium mb-4">
+                                <i class="bi bi-info-circle mr-2"></i>
+                                Kontaktinformasjon
+                            </div>
+                            <h2 class="text-2xl font-bold text-gray-900 mb-3">Vi er her for å hjelpe deg</h2>
+                            <p class="text-gray-600 leading-relaxed mb-6">Har du spørsmål om våre apper eller trenger du hjelp med teoriprøven? Vi svarer gjerne på alle henvendelser og hjelper deg med å komme i gang.</p>
+                        </div>
+
+
+                        <div class="space-y-4 mb-6">
+                            {{ with site.Params.contact.email }}
+                            <div class="flex items-center p-4 bg-white rounded-lg shadow-sm">
+                                <div class="flex-shrink-0 w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="bi bi-envelope text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">E-post</h4>
+                                    <a href="mailto:{{ . }}" class="text-blue-600 hover:text-blue-700 transition-colors">{{ . }}</a>
+                                </div>
+                            </div>
+                            {{ end }}
+
+                            {{ with site.Params.contact.orgnr }}
+                            <div class="flex items-center p-4 bg-white rounded-lg shadow-sm">
+                                <div class="flex-shrink-0 w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="bi bi-building text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Orgnr</h4>
+                                    <p class="text-gray-600">{{ . }}</p>
+                                </div>
+                            </div>
+                            {{ end }}
+
+                            {{ with site.Params.contact.address }}
+                            <div class="flex items-center p-4 bg-white rounded-lg shadow-sm">
+                                <div class="flex-shrink-0 w-10 h-10 bg-purple-600 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="bi bi-geo-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Adresse</h4>
+                                    <p class="text-gray-600">{{ . }}</p>
+                                </div>
+                            </div>
+                            {{ end }}
+                        </div>
+
+
+                        {{ with site.Params.contact.opening_hours }}
+                        <div class="bg-white rounded-lg p-4 shadow-sm">
+                            <h4 class="font-semibold text-gray-900 mb-3 flex items-center">
+                                <i class="bi bi-clock mr-2 text-green-600"></i>
+                                Åpningstider
+                            </h4>
+                            <div class="space-y-2 text-sm">
+                                {{ range . }}
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">{{ .days }}</span>
+                                    <span class="font-medium {{ if .closed }}text-red-600{{ else }}text-gray-900{{ end }}">{{ .hours }}</span>
+                                </div>
+                                {{ end }}
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+
+
+                    <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8 shadow-sm">
+                        <div class="mb-6">
+                            <div class="inline-flex items-center px-3 py-1 bg-purple-100 rounded-full text-purple-800 text-sm font-medium mb-4">
+                                <i class="bi bi-info-circle mr-2"></i>
+                                Informasjon
+                            </div>
+                            {{ with site.Params.services.intro_title }}<h2 class="text-2xl font-bold text-gray-900 mb-3">{{ . }}</h2>{{ end }}
+                            {{ with site.Params.services.intro_text }}<p class="text-gray-600 leading-relaxed mb-6">{{ . }}</p>{{ end }}
+                        </div>
+
+
+                        <div class="space-y-4">
+                            {{ with site.Params.services.features }}
+                                {{ range . }}
+                                <div class="bg-white rounded-lg p-5 shadow-sm">
+                                    <h4 class="font-semibold text-gray-900 mb-2 flex items-start">
+                                        {{ .title }}
+                                    </h4>
+                                    <p class="text-gray-600 text-sm leading-relaxed ">{{ .description }}</p>
+                                </div>
+                                {{ end }}
+                            {{ end }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    {{ with site.Params.faq }}
+    <section class="py-12 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Ofte stilte spørsmål
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Her finner du svar på de vanligste spørsmålene
+                </p>
+            </div>
+
+            <div class="space-y-6">
+                {{ range . }}
+                <div class="bg-white rounded-xl shadow-sm p-6">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">{{ .q }}</h3>
+                    <p class="text-gray-600">{{ .a }}</p>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </section>
+    {{ end }}
+</div>
+{{ end }}

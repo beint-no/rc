@@ -1,47 +1,102 @@
-# Basic Configuration
 baseURL = "https://respiroc.com/"
 languageCode = "en-US"
 title = "Respiro"
 
-# Core SEO switches
+theme = "r-hugo-theme"
 enableRobotsTXT = true
-
-# Required Module Configuration
-[module]
-  [module.hugoVersion]
-    extended = true
-    min = "0.148.2"
-
-# Use Git/file times for <lastmod> in pages and sitemap
-enableGitInfo = true
+disableKinds = ["taxonomy", "term", "RSS"]
+enableGitInfo = true # Use Git/file times for <lastmod> in pages and sitemap
 
 [markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true  # Allow raw HTML, important for JSON-LD etc.
-  [markup.tableOfContents]
-    endLevel = 3
-    ordered = false
-    startLevel = 2
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true # Allow raw HTML, important for JSON-LD etc.
 
 [minify]
-  minifyOutput = true
+minifyOutput = true
 
-[menus]
-  [[menus.main]]
-  name = 'Contact us'
-  url = '/pages/contact-us/'
-  weight = 1
 
-  [[menus.main]]
-  name = 'About us'
-  url = '/pages/about-us/'
-  weight = 2
 
-  [[menus.main]]
-  name = 'Marketing blog'
-  url = '/blogs/marketing/'
-  weight = 3
+[params.header]
+brandIconClass = "bi-mortarboard-fill"
+[params.header.cta]
+text = "Bli medlem"
+url = "/become-member/"
 
-[params]
-  description = 'Respiro AS is a software development company focusing on "AI first" systems.'
+[params.company]
+name = "Better Integration"
+address_lines = ["Lørenvangen 23A", "0585 Oslo"]
+orgnr = "935 733 944"
+orgform = "Ideell organisasjon"
+
+[params.footer]
+[params.footer.about]
+text = "Vi er en ideell organisasjon dedikert til å gjøre integreringsprosessen enklere og mer meningsfull."
+
+[params.contact]
+email = "post@beint.no"
+orgnr = "935 733 944"
+address = "Lørenvangen 23, 0585 Oslo"
+phone = "+47 47958628"
+contact_form_url = "/contact/"
+
+[[params.contact.opening_hours]]
+days = "Mandag - Fredag"
+hours = "09:00 - 17:00"
+
+[[params.contact.opening_hours]]
+days = "Lørdag"
+hours = "10:00 - 14:00"
+
+[[params.contact.opening_hours]]
+days = "Søndag"
+hours = "Stengt"
+closed = true
+
+[params.services]
+intro_title = "Om våre tjenester"
+intro_text = "Better Integration er en ideell organisasjon som jobber for inkludering gjennom kurs, veiledning og digitale ressurser."
+
+[menu]
+[[menu.main]]
+name = "Nyheter"
+url = "/blogs/nyheter/"
+weight = 10
+
+[[menu.main]]
+name = "Norsk kurs"
+url = "/blogs/norsk/"
+weight = 20
+
+[[menu.main]]
+name = "Gratis teoriprøve"
+url = "/gratis-teoriprove/"
+weight = 30
+
+[[params.services.features]]
+title = "Lav terskel"
+description = "Vi tilbyr gratis ressurser og åpne arrangementer slik at flere kan delta."
+
+[[params.services.features]]
+title = "Partnerskap med lokalmiljøet"
+description = "Vi samarbeider med skoler, frivillige og næringsliv for å skape bedre integrering."
+
+[[params.services.features]]
+title = "Individuell veiledning"
+description = "Deltakere får praktisk hjelp og rådgivning til språk, arbeid og hverdagsmestring."
+
+[[params.faq]]
+q = "Hvordan kan jeg bidra?"
+a = "Du kan melde deg som frivillig eller støtte oss økonomisk. Send e-post til post@beint.no."
+
+[[params.faq]]
+q = "Tilbyr dere gratis ressurser?"
+a = "Ja, flere av våre kurs og materiell er gratis eller sterkt rabattert gjennom støtteordninger."
+
+[[params.faq]]
+q = "Hvor holder dere til?"
+a = "Se kontaktseksjonen for detaljer."
+
+[[params.faq]]
+q = "Hvordan kontakter jeg dere?"
+a = "Send e-post til post@beint.no, så svarer vi så fort vi kan."

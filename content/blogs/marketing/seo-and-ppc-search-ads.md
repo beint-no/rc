@@ -2,7 +2,6 @@
 title: "SEO and PPC search ads"
 meta_title: "SEO and PPC Search Ads Best Practices | Respiro"
 description: "Best practices for SEO and SEM. Keyword research, naming conventions, redirects and more."
-layout: blog-article
 ---
 
 Search engine optimization and related PPC ads are one of the most important part of marketing at [Famme](https://famme.no).
