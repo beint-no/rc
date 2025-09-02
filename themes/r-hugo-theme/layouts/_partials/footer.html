@@ -24,7 +24,6 @@
                 <h3 class="text-base font-semibold mb-3">Contact</h3>
                 <ul class="text-gray-400 text-sm space-y-1">
                     {{ with site.Params.contact.email }}<li>Email: <a href="mailto:{{ . }}" class="text-white underline hover:no-underline">{{ . }}</a></li>{{ end }}
-                    {{ with site.Params.contact.phone }}<li>Phone: <a href="tel:{{ . }}" class="text-white underline hover:no-underline">{{ . }}</a></li>{{ end }}
                     {{ with site.Params.contact.contact_form_url }}<li><a href="{{ . }}" class="text-white underline hover:no-underline">Contact form</a></li>{{ end }}
                 </ul>
             </div>
