@@ -25,16 +25,16 @@
                             <a class="text-gray-700 hover:text-blue-600 font-medium transition-colors" href="{{ .URL }}">{{ .Name }}</a>
                         {{ end }}
                     {{ else }}
-                        <a class="text-gray-700 hover:text-blue-600 font-medium transition-colors" href="/blogs/nyheter/">Nyheter</a>
-                        <a class="text-gray-700 hover:text-blue-600 font-medium transition-colors" href="/blogs/norsk/">Norsk kurs</a>
-                        <a class="text-gray-700 hover:text-blue-600 font-medium transition-colors" href="/gratis-teoriprove/">Gratis teoriprøve</a>
+                        <a class="text-gray-700 hover:text-blue-600 font-medium transition-colors" href="/blogs/news/">News</a>
+                        <a class="text-gray-700 hover:text-blue-600 font-medium transition-colors" href="/blogs/norwegian/">Norwegian course</a>
+                        <a class="text-gray-700 hover:text-blue-600 font-medium transition-colors" href="/free-practice-test/">Free practice test</a>
                     {{ end }}
                     {{ with site.Params.header.cta }}
                         {{ if and .text .url }}
                             <a class="text-white bg-blue-600 hover:bg-blue-700 font-medium transition-colors px-4 py-2 rounded-lg md:ml-2" href="{{ .url }}">{{ .text }}</a>
                         {{ end }}
                     {{ else }}
-                        <a class="text-white bg-blue-600 hover:bg-blue-700 font-medium transition-colors px-4 py-2 rounded-lg md:ml-2" href="/become-member/">Bli medlem</a>
+                        <a class="text-white bg-blue-600 hover:bg-blue-700 font-medium transition-colors px-4 py-2 rounded-lg md:ml-2" href="/become-member/">Become a member</a>
                     {{ end }}
                 </div>
             </div>

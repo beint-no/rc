@@ -3,36 +3,36 @@
         <div class="grid md:grid-cols-3 gap-8 mb-8">
             <div>
                 <div class="flex items-center mb-3">
-                    <span class="text-xl font-bold text-white">Om oss</span>
+                    <span class="text-xl font-bold text-white">About us</span>
                 </div>
                 {{ with site.Params.footer.about.text }}<p class="text-gray-400 text-sm">{{ . }}</p>{{ end }}
             </div>
 
             <div>
-                <h3 class="text-base font-semibold mb-3">Firma-info</h3>
+                <h3 class="text-base font-semibold mb-3">Company info</h3>
                 <ul class="text-gray-400 text-sm space-y-1">
                     {{ with site.Params.company.name }}<li>{{ . }}</li>{{ end }}
                     {{ with site.Params.company.address_lines }}
                         {{ range . }}<li>{{ . }}</li>{{ end }}
                     {{ end }}
-                    {{ with site.Params.company.orgnr }}<li>Orgnr: <span>{{ . }}</span></li>{{ end }}
-                    {{ with site.Params.company.orgform }}<li>Organisasjonsform: {{ . }}</li>{{ end }}
+                    {{ with site.Params.company.orgnr }}<li>Org no.: <span>{{ . }}</span></li>{{ end }}
+                    {{ with site.Params.company.orgform }}<li>Company type: {{ . }}</li>{{ end }}
                 </ul>
             </div>
 
             <div>
-                <h3 class="text-base font-semibold mb-3">Kontakt</h3>
+                <h3 class="text-base font-semibold mb-3">Contact</h3>
                 <ul class="text-gray-400 text-sm space-y-1">
-                    {{ with site.Params.contact.email }}<li>E-post: <a href="mailto:{{ . }}" class="text-white underline hover:no-underline">{{ . }}</a></li>{{ end }}
-                    {{ with site.Params.contact.phone }}<li>Telefon: <a href="tel:{{ . }}" class="text-white underline hover:no-underline">{{ . }}</a></li>{{ end }}
-                    {{ with site.Params.contact.contact_form_url }}<li><a href="{{ . }}" class="text-white underline hover:no-underline">Kontaktskjema</a></li>{{ end }}
+                    {{ with site.Params.contact.email }}<li>Email: <a href="mailto:{{ . }}" class="text-white underline hover:no-underline">{{ . }}</a></li>{{ end }}
+                    {{ with site.Params.contact.phone }}<li>Phone: <a href="tel:{{ . }}" class="text-white underline hover:no-underline">{{ . }}</a></li>{{ end }}
+                    {{ with site.Params.contact.contact_form_url }}<li><a href="{{ . }}" class="text-white underline hover:no-underline">Contact form</a></li>{{ end }}
                 </ul>
             </div>
         </div>
 
         <div class="border-t border-gray-800 pt-4 text-center">
             <p class="text-gray-400">&copy; {{ dateFormat "2006" now }} {{ with site.Params.company.name }}{{ . }}{{ end }}.</p>
-            <p class="text-gray-500 text-sm mt-1">Registrert i Enhetsregisteret / Foretaksregisteret</p>
+            <p class="text-gray-500 text-sm mt-1">Registered in the Norwegian Company Register</p>
         </div>
     </div>
 </footer>
