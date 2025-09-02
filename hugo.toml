@@ -18,85 +18,85 @@ minifyOutput = true
 
 
 [params.header]
-brandIconClass = "bi-mortarboard-fill"
+brandIconClass = "bi-cpu-fill"
 [params.header.cta]
-text = "Bli medlem"
-url = "/become-member/"
+text = "Get in touch"
+url = "/pages/contact/"
 
 [params.company]
-name = "Better Integration"
-address_lines = ["Lørenvangen 23A", "0585 Oslo"]
-orgnr = "935 733 944"
-orgform = "Ideell organisasjon"
+name = "Respiro"
+address_lines = ["Oslo, Norway"]
+orgnr = ""
+orgform = "Private company"
 
 [params.footer]
 [params.footer.about]
-text = "Vi er en ideell organisasjon dedikert til å gjøre integreringsprosessen enklere og mer meningsfull."
+text = "Respiro is an AI-first software company building products that help teams work smarter and move faster."
 
 [params.contact]
-email = "post@beint.no"
-orgnr = "935 733 944"
-address = "Lørenvangen 23, 0585 Oslo"
-phone = "+47 47958628"
-contact_form_url = "/contact/"
+email = "hello@respiroc.com"
+orgnr = ""
+address = "Oslo, Norway"
+phone = "+47 00000000"
+contact_form_url = "/pages/contact/"
 
 [[params.contact.opening_hours]]
-days = "Mandag - Fredag"
+days = "Monday - Friday"
 hours = "09:00 - 17:00"
 
 [[params.contact.opening_hours]]
-days = "Lørdag"
+days = "Saturday"
 hours = "10:00 - 14:00"
 
 [[params.contact.opening_hours]]
-days = "Søndag"
-hours = "Stengt"
+days = "Sunday"
+hours = "Closed"
 closed = true
 
 [params.services]
-intro_title = "Om våre tjenester"
-intro_text = "Better Integration er en ideell organisasjon som jobber for inkludering gjennom kurs, veiledning og digitale ressurser."
+intro_title = "What we build"
+intro_text = "Respiro creates AI-first SaaS that augments workflows with intelligent automation, copilots, and secure data pipelines."
 
 [menu]
 [[menu.main]]
-name = "Nyheter"
-url = "/blogs/nyheter/"
+name = "Blog"
+url = "/blogs/marketing/"
 weight = 10
 
 [[menu.main]]
-name = "Norsk kurs"
-url = "/blogs/norsk/"
+name = "About"
+url = "/pages/about-us/"
 weight = 20
 
 [[menu.main]]
-name = "Gratis teoriprøve"
-url = "/gratis-teoriprove/"
+name = "Contact"
+url = "/pages/contact/"
 weight = 30
 
 [[params.services.features]]
-title = "Lav terskel"
-description = "Vi tilbyr gratis ressurser og åpne arrangementer slik at flere kan delta."
+title = "AI-first by design"
+description = "We design around intelligent agents and copilots from day one, not as an add-on."
 
 [[params.services.features]]
-title = "Partnerskap med lokalmiljøet"
-description = "Vi samarbeider med skoler, frivillige og næringsliv for å skape bedre integrering."
+title = "Secure and compliant"
+description = "Enterprise-ready foundations with auditability, privacy, and data governance."
 
 [[params.services.features]]
-title = "Individuell veiledning"
-description = "Deltakere får praktisk hjelp og rådgivning til språk, arbeid og hverdagsmestring."
+title = "Measurable impact"
+description = "We focus on outcomes: reduced cycle time, higher conversion, and better customer experiences."
 
 [[params.faq]]
-q = "Hvordan kan jeg bidra?"
-a = "Du kan melde deg som frivillig eller støtte oss økonomisk. Send e-post til post@beint.no."
+q = "What does AI-first mean at Respiro?"
+a = "AI shapes product architecture, UI, and workflows—every feature is evaluated for how intelligent automation can create leverage."
 
 [[params.faq]]
-q = "Tilbyr dere gratis ressurser?"
-a = "Ja, flere av våre kurs og materiell er gratis eller sterkt rabattert gjennom støtteordninger."
+q = "Do you work with existing tools?"
+a = "Yes. Our products integrate with popular CRMs, data warehouses, and analytics platforms."
 
 [[params.faq]]
-q = "Hvor holder dere til?"
-a = "Se kontaktseksjonen for detaljer."
+q = "Where are you based?"
+a = "We are based in Oslo, Norway with distributed team members."
 
 [[params.faq]]
-q = "Hvordan kontakter jeg dere?"
-a = "Send e-post til post@beint.no, så svarer vi så fort vi kan."
+q = "How can we contact you?"
+a = "Email hello@respiroc.com or use the contact page."
